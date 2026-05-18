@@ -1,5 +1,3 @@
-import controllers.MovieController;
-import models.Movie;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -46,5 +44,4 @@ public class App {
         movies[24] = new Movie("Iron Man", 2008);
         return movies;
     }
-
 }

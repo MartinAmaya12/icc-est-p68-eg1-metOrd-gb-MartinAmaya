@@ -2,13 +2,15 @@
 
 ## Objetivo
 
-Implementar `sortByTitle(Movie[] movies)` en `MovieController` para ordenar películas por título en orden ascendente.
+Implementar `sortByTitle(Movie[] movies)` en `MovieController` para ordenar películas por título en orden descendente.
+
+**Los nombres de clases, metodos, atributos deben ser exactamente los indicados en esta guía de requerimientos.**
 
 ## Qué debes editar
 
 1. Edita solo `src/controllers/MovieController.java`.
 2. Implementa `sortByTitle`.
-3. Implementa clase modelo `Movie` con atributos `title` y `year`.
+3. Implementa clase modelo `Movie` con atributos `name` y `year`.
 3. No cambies tests, modelo ni validadores.
 
 
@@ -31,13 +33,13 @@ Entrada de ejemplo:
 5. Avatar (2016)
 ```
 
-Salida ordenada esperada (case-sensitive):
+Salida ordenada esperada:
 ```text
-1. AVATAR (2022)
-2. Avatar (2016)
+1. avatar (2009)
+2. The Matrix (1999)
 3. Inception (2010)
-4. The Matrix (1999)
-5. avatar (2009)
+4. Avatar (2016)
+5. AVATAR (2022)
 ```
 
 Otro ejemplo:
@@ -49,12 +51,12 @@ ANTES
 4. Batman (2022)
 5. avatar (2009)
 
-DESPUÉS (case-sensitive)
-1. Batman (2022)
-2. DUNE (2024)
+DESPUÉS
+1. dune (2021)
+2. avatar (2009)
 3. Dune (1984)
-4. avatar (2009)
-5. dune (2021)
+4. DUNE (2024)
+5. Batman (2022)
 ```
 
 ## Configuración de estudiante
