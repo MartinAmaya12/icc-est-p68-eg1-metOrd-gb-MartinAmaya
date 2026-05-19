@@ -1,3 +1,5 @@
+import controllers.MovieController;
+import models.Movie;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -6,6 +8,16 @@ public class App {
         // ordenar la lista de películas por título utilizando el método sortByTitle del
         // MovieController
         // imprimir la lista de películas ordenada
+        System.out.println("Estudiante Martin Amaya");
+        MovieController controller = new MovieController();
+
+        System.out.println("Arreglo sin ordenar");
+        imprimirArreglo(generateMoviesList());
+
+        
+        controller.sortByTitle(generateMoviesList());
+        System.out.println("\nArreglo ordenado: \n");
+        imprimirArreglo(generateMoviesList());
 
     }
 
@@ -44,4 +56,11 @@ public class App {
         movies[24] = new Movie("Iron Man", 2008);
         return movies;
     }
+
+    public static void imprimirArreglo(Movie[] movies){
+        for(Movie m : movies){
+            System.out.println(generateMoviesList());
+        }
+    }
+
 }

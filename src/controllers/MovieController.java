@@ -1,14 +1,21 @@
 package controllers;
-
+import models.Movie;
 public class MovieController {
 
-    /**
-     * Método que debe ser implementado
-     * Debe ordenar el arreglo de películas por título en orden descendente.
-     * 
-     * Metodo: sortByTitle
-     * 
-     * @param movies Arreglo de películas a ordenar
-     */
+    public void sortByTitle(Movie[] movies){
+        for(int i = 1; i < movies.length; i++){
+            Movie aux = movies[i];
+            for(int j= 0; j < movies.length; j++){
+                while(j >= 0 && movies[j].getName().compareToIgnoreCase(movies[j+1].getName()) > 0){
+                    movies[j+1] = movies[j];
+                    j--;
+                }
+                movies[j] = aux;
+            }
+            
+        }
+        
+        
+    }
 
 }
